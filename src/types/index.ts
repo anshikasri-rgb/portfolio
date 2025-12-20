@@ -40,7 +40,7 @@ export interface Project {
 
 export interface AboutProps {
   description: string;
-  image: string;
+  image?: string;
   skills: string[];
   interests?: string[];
 }

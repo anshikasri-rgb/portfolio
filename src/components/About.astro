@@ -47,11 +47,13 @@ const { description, name, image, skills, interests } = Astro.props;
         }
       </div>
 
-      <div class="bio-image flex items-center justify-center">
-        <div class="image-wrapper">
-          <img src={image} alt={name} />
+      {image && (
+        <div class="bio-image flex items-center justify-center">
+          <div class="image-wrapper">
+            <img src={image} alt={name} />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   </div>
 </section>
